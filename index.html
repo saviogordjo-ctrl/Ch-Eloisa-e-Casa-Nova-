@@ -1,162 +1,510 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Chá de Casa Nova & Fraldas da Eloísa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chá de Casa Nova & Fraldas da Eloísa</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    color:#444;
+    background:#faf9f7;
+}
+
+.hero{
+    background:#fff;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    color:#8b6a60;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.1rem;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.section{
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#8b6a60;
+    margin-bottom:15px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f8f4f2;
+    padding:20px;
+    border-radius:10px;
+}
+
+.pix{
+    background:#f3e8e4;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.pix-number{
+    font-size:1.6rem;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#25d366;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+.form{
+    display:grid;
+    gap:15px;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:#8b6a60;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.footer{
+    background:#8b6a60;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Chá de Casa Nova & Fraldas da Eloísa</h1>
-    <p>Site em construção ❤️</p>
-<section>
-  <h2>🏠👶 Chá de Casa Nova & Fraldas da Eloísa</h2>
 
-  <p>
-    Depois de tantas conquistas, chegou a hora de celebrar uma nova fase em
-    nossas vidas: nosso lar e a chegada da nossa princesa Eloísa.
-  </p>
+<section class="hero">
 
-  <p>
-    Sua presença já é um grande presente, mas também preparamos uma lista com
-    sugestões para nossa casa e para a chegada da Eloísa.
-  </p>
+<h1>🏠👶 Chá de Casa Nova & Fraldas da Eloísa</h1>
 
-  <hr>
+<p><strong>Sávio, Rafaela e Eloísa</strong></p>
 
-  <h3>📅 Informações do Evento</h3>
+<p>06 de Dezembro de 2026 • A partir das 12h</p>
 
-  <p><strong>Data:</strong> 06/12/2026</p>
-  <p><strong>Horário:</strong> A partir das 12h</p>
-  <p><strong>Local:</strong> Nosso Quintal Eventos - Uberlândia/MG</p>
-
-  <p>
-    <a target="_blank"
-      href="https://www.google.com/maps/search/?api=1&query=Nosso+Quintal+Eventos+Uberlandia+MG">
-      📍 Como chegar
-    </a>
-  </p>
-
-  <hr>
-
-  <h3>✅ Confirmar Presença</h3>
-
-  <form>
-    <label>Nome Completo</label><br>
-    <input type="text" placeholder="Digite seu nome"><br><br>
-
-    <label>WhatsApp</label><br>
-    <input type="tel" placeholder="(34) 99999-9999"><br><br>
-
-    <label>Comparecerá ao evento?</label><br>
-    <select>
-      <option>Sim</option>
-      <option>Não</option>
-    </select><br><br>
-
-    <label>Levará acompanhante?</label><br>
-    <select>
-      <option>Não</option>
-      <option>Sim, 1 acompanhante</option>
-    </select><br><br>
-
-    <label>Qual presente pretende levar?</label><br>
-    <select>
-      <option>Fralda M</option>
-      <option>Fralda G</option>
-      <option>Fralda GG</option>
-      <option>Presente da lista</option>
-      <option>Contribuição PIX</option>
-    </select><br><br>
-
-    <label>💌 Deixe um recado para nossa família</label><br>
-    <textarea rows="4"></textarea><br><br>
-
-    <button type="submit">Confirmar Presença</button>
-  </form>
-
-  <hr>
-
-  <h3>👶 Fraldas</h3>
-
-  <p>🍼 Fralda M - 50 convidados</p>
-  <p>🍼 Fralda G - 60 convidados</p>
-  <p>🍼 Fralda GG - 40 convidados</p>
-
-  <hr>
-
-  <h3>💝 Contribuição para Nosso Lar</h3>
-
-  <p>
-    Nossa maior alegria é compartilhar esse momento tão especial com vocês.
-    Caso prefira, também é possível contribuir por PIX para nos ajudar a
-    concluir alguns projetos do nosso novo lar e preparar a chegada da Eloísa.
-  </p>
-
-  <p><strong>PIX:</strong> 34 99337-2529</p>
-
-  <h4>Contribuições Especiais</h4>
-
-  <ul>
-    <li>📺 TV Smart 55" para sala</li>
-    <li>🤖 Robô Aspirador</li>
-    <li>🍽️ Lava-louças 45cm</li>
-    <li>❄️ Ar-condicionado quarto do casal</li>
-    <li>🛋️ Rack + Painel da sala</li>
-  </ul>
-
-  <hr>
-
-  <h3>🎁 Lista de Presentes</h3>
-
-  <ul>
-    <li>Jogo de panelas antiaderente</li>
-    <li>Frigideira grande</li>
-    <li>Frigideira pequena</li>
-    <li>Panela wok</li>
-    <li>Jogo de facas com tesoura</li>
-    <li>Bowl inox com tampa</li>
-    <li>Torradeira</li>
-    <li>Panela elétrica multifuncional</li>
-    <li>Travessas de vidro com tampa</li>
-    <li>Faqueiro completo</li>
-    <li>Conjunto de copos</li>
-    <li>Jogo de jantar Ryo Maresia</li>
-    <li>Jogo de jantar Orgânico</li>
-    <li>Queijeira de vidro</li>
-    <li>Boleira de vidro</li>
-    <li>Porta frios triplo</li>
-    <li>Galheteiro</li>
-    <li>Petisqueira</li>
-    <li>Taças para vinho</li>
-    <li>Taças para espumante</li>
-    <li>Rack Freijó</li>
-    <li>Painel Ravena Freijó</li>
-    <li>Tapete para sala</li>
-    <li>Puff mesinha Bouclé</li>
-    <li>Vaso decorativo para sala</li>
-    <li>Porta chaves decorativo</li>
-    <li>Porta retratos</li>
-    <li>Espelho corpo inteiro</li>
-    <li>Luminária abajur</li>
-    <li>4 cadeiras para mesa de jantar</li>
-    <li>Banco para sacada</li>
-    <li>2 bancos auxiliares</li>
-    <li>Edredom Queen</li>
-    <li>Jogo de cama Queen</li>
-    <li>Cortina quarto casal</li>
-    <li>Cortina quarto Eloísa</li>
-    <li>Jogo de toalhas de banho</li>
-    <li>Organizador para box</li>
-    <li>Kit lavabo</li>
-    <li>Chuveiro banheiro Eloísa</li>
-    <li>Mop giratório</li>
-    <li>Cesto de roupa suja</li>
-    <li>Cestos organizadores</li>
-    <li>Caixa de ferramentas</li>
-    <li>Kit ferramentas domésticas</li>
-    <li>Cabides infantis</li>
-    <li>Lenços umedecidos</li>
-    <li>Pomada para assaduras</li>
-    <li>Kit higiene bebê</li>
-    <li>Termômetro digital</li>
-  </ul>
 </section>
+
+<div class="container">
+
+<section class="section">
+
+<h2>❤️ Nossa História</h2>
+
+<p>
+Depois de tantas conquistas, chegou a hora de celebrarmos uma fase muito especial:
+nosso lar e a chegada da nossa princesa Eloísa.
+</p>
+
+<br>
+
+<p>
+Sua presença será o nosso maior presente, mas para quem desejar nos ajudar,
+preparamos uma lista de presentes para nossa casa e para a chegada da Eloísa.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>📸 Nossa Família</h2>
+
+<div class="gallery">
+
+<!-- Troque pelos nomes reais das fotos -->
+
+<img src="foto1.jpg" alt="">
+<img src="foto2.jpg" alt="">
+<img src="foto3.jpg" alt="">
+<img src="foto4.jpg" alt="">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>📅 Informações do Evento</h2>
+
+<div class="info-grid">
+
+<div class="card">
+<h3>🗓️ Data</h3>
+<p>06/12/2026</p>
+</div>
+
+<div class="card">
+<h3>🕛 Horário</h3>
+<p>A partir das 12h</p>
+</div>
+
+<div class="card">
+<h3>📍 Local</h3>
+<p>Nosso Quintal Eventos</p>
+<p>Uberlândia - MG</p>
+</div>
+
+</div>
+
+<br>
+
+<a
+class="btn"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=Nosso+Quintal+Eventos+Uberlandia+MG">
+📍 Como Chegar
+</a>
+
+</section>
+
+<section class="section">
+
+<h2>✅ Confirmação de Presença</h2>
+
+<form class="form">
+
+<input type="text" placeholder="Nome Completo">
+
+<input type="tel" placeholder="WhatsApp">
+
+<select>
+<option>Vou comparecer</option>
+<option>Não poderei comparecer</option>
+</select>
+
+<select>
+<option>Não levarei acompanhante</option>
+<option>Levarei 1 acompanhante</option>
+</select>
+
+<select>
+<option>Fralda M</option>
+<option>Fralda G</option>
+<option>Fralda GG</option>
+<option>Presente da Lista</option>
+<option>Contribuição PIX</option>
+</select>
+
+<textarea rows="5" placeholder="Deixe um recado para nossa família ❤️"></textarea>
+
+<button type="submit">
+Confirmar Presença
+</button>
+
+</form>
+
+<br>
+
+<a
+class="btn"
+target="_blank"
+href="https://wa.me/5534993372529?text=Olá! Estou confirmando minha presença no Chá de Casa Nova e Fraldas da Eloísa.">
+Confirmar pelo WhatsApp
+</a>
+
+</section>
+
+<section class="section">
+
+<h2>👶 Fraldas</h2>
+
+<div class="info-grid">
+
+<div class="card">
+<h3>Fralda M</h3>
+<p>50 convidados</p>
+</div>
+
+<div class="card">
+<h3>Fralda G</h3>
+<p>60 convidados</p>
+</div>
+
+<div class="card">
+<h3>Fralda GG</h3>
+<p>40 convidados</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>💝 Contribuição para Nosso Lar</h2>
+
+<div class="pix">
+
+<p>
+Nossa maior alegria é compartilhar este momento tão especial com vocês.
+Caso prefira, além da nossa lista de presentes, você também pode contribuir
+com qualquer valor para nos ajudar a realizar alguns sonhos para o nosso lar
+e preparar a chegada da Eloísa.
+</p>
+
+<div class="pix-number">
+PIX: 34 99337-2529
+</div>
+
+</div>
+
+<h3 style="margin-top:25px;">
+🌟 Contribuições Especiais
+</h3>
+
+<ul>
+<li>📺 TV Smart 55" para Sala</li>
+<li>🤖 Robô Aspirador</li>
+<li>🍽️ Lava-louças 45cm</li>
+<li>❄️ Ar-condicionado para o quarto do casal</li>
+<li>🛋️ Rack + Painel da Sala</li>
+</ul>
+
+</section>
+
+<section class="section">
+
+<h2>🎁 Lista de Presentes</h2>
+
+<h3>🍳 Cozinha</h3>
+
+<ul>
+<li>Jogo de panelas antiaderente</li>
+<li>Frigideira grande</li>
+<li>Frigideira pequena</li>
+<li>Panela wok</li>
+<li>Garrafa de vidro</li>
+<li>Tábua de corte inox</li>
+<li>Conjunto de facas com tesoura</li>
+<li>Bowls inox com tampa</li>
+<li>Torradeira 220v</li>
+<li>Panela elétrica multifuncional</li>
+<li>Travessas de vidro com tampa</li>
+<li>Conjunto de copos</li>
+<li>Faqueiro completo</li>
+<li>Queijeira de vidro</li>
+<li>Boleira de vidro</li>
+<li>Porta frios triplo</li>
+<li>Galheteiro</li>
+<li>Fruteira aramada</li>
+<li>Ralador inox</li>
+<li>Forma para pizza</li>
+<li>Abridor de vinho</li>
+<li>Saca-rolhas</li>
+</ul>
+
+<br>
+
+<h3>🍽️ Mesa Posta</h3>
+
+<ul>
+<li>Jogo americano</li>
+<li>Sousplat</li>
+<li>Toalha de mesa</li>
+<li>Petisqueira</li>
+<li>Bandeja decorativa</li>
+<li>Balde de gelo</li>
+<li>Taças para vinho</li>
+<li>Taças para espumante</li>
+<li>Jogo de jantar Ryo Maresia</li>
+<li>Jogo de jantar Orgânico Oceano</li>
+<li>Xícaras com pires</li>
+<li>Travessas para servir</li>
+</ul>
+
+<br>
+
+<h3>🛋️ Sala</h3>
+
+<ul>
+<li>Rack Freijó</li>
+<li>Painel Ravena Freijó</li>
+<li>Tapete para sala</li>
+<li>Puff mesinha Bouclé</li>
+<li>Vaso decorativo</li>
+<li>Porta-chaves decorativo</li>
+<li>Porta-retratos</li>
+<li>Espelho corpo inteiro</li>
+<li>Luminária de mesa</li>
+<li>Mesa lateral</li>
+</ul>
+
+<br>
+
+<h3>🪑 Sala de Jantar e Varanda</h3>
+
+<ul>
+<li>4 cadeiras para mesa de jantar</li>
+<li>Banco para sacada</li>
+<li>2 bancos auxiliares</li>
+</ul>
+
+<br>
+
+<h3>🛏️ Quarto do Casal</h3>
+
+<ul>
+<li>Edredom Queen</li>
+<li>Jogo de cama Queen</li>
+<li>Lençol Queen</li>
+<li>Par de fronhas cetim</li>
+<li>Cortina para quarto</li>
+</ul>
+
+<br>
+
+<h3>🚿 Banheiros</h3>
+
+<ul>
+<li>Acabamento DOCOL preto</li>
+<li>Gancho ventosa preto</li>
+<li>Ralo Click Pingoo</li>
+<li>Kit lavabo</li>
+<li>Jogo de toalhas de banho</li>
+<li>Toalhas de rosto</li>
+<li>Toalhas lavabo</li>
+<li>Organizador para box</li>
+<li>Porta papel higiênico</li>
+<li>Tapete para banheiro</li>
+<li>Lixeira banheiro</li>
+<li>Espelho de aumento</li>
+<li>Chuveiro banheiro Eloísa</li>
+</ul>
+
+<br>
+
+<h3>🧺 Lavanderia</h3>
+
+<ul>
+<li>Mop giratório</li>
+<li>Cesto de roupa suja</li>
+<li>Cestos organizadores</li>
+<li>Organizador de limpeza</li>
+<li>Balde adicional</li>
+<li>Sacos organizadores para roupas de cama</li>
+</ul>
+
+<br>
+
+<h3>🔧 Casa</h3>
+
+<ul>
+<li>Caixa de ferramentas</li>
+<li>Kit ferramentas domésticas</li>
+<li>Escada doméstica</li>
+<li>Filtro de linha</li>
+<li>Extensões elétricas</li>
+</ul>
+
+<br>
+
+<h3>👶 Cantinho da Eloísa</h3>
+
+<ul>
+<li>Fraldas M</li>
+<li>Fraldas G</li>
+<li>Fraldas GG</li>
+<li>Cabides infantis em veludo</li>
+<li>Lenços umedecidos</li>
+<li>Pomada para assaduras</li>
+<li>Shampoo infantil</li>
+<li>Sabonete infantil</li>
+<li>Kit higiene bebê</li>
+<li>Escova e pente infantil</li>
+<li>Termômetro digital</li>
+</ul>
+
+</section>
+
+</div>
+
+<footer class="footer">
+
+<h3>❤️ Esperamos vocês!</h3>
+
+<p>
+06 de Dezembro de 2026 • Uberlândia/MG
+</p>
+
+<p>
+Sávio, Rafaela e Eloísa
+</p>
+
+</footer>
+
+</body>
+</html>
